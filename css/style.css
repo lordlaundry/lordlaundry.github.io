@@ -34,16 +34,16 @@ body {
 }
 
 .ic {
-	border:0;
-	float:right;
-	background:#fff;
-	color:#f00;
-	width:50%;
-	line-height:10px;
-	font-size:10px;
-	margin:-220% 0 0 0;
-	overflow:hidden;
-	padding:0
+    border:0;
+    float:right;
+    background:#fff;
+    color:#f00;
+    width:50%;
+    line-height:10px;
+    font-size:10px;
+    margin:-220% 0 0 0;
+    overflow:hidden;
+    padding:0
 }
 
 strong {
@@ -337,13 +337,13 @@ a:hover {
 
 header {
     display: block;
-    padding-top: 70px;
+    padding-top: 24px;
     position: relative;
     overflow: hidden;
 }
 
 .page1 header h1{
-    padding-bottom: 45px;
+    padding-bottom: 24px;
 }
 
 
@@ -367,6 +367,10 @@ header h1 a {
 
 header h1 a img {
     display: block;
+}
+
+img.logo {
+    height: 128px;
 }
 /**Content**/
 
