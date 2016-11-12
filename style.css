@@ -1,0 +1,237 @@
+/*===============================
+
+Template Name: Coming Soon Page
+Author: DevItems
+Author URI: www.devitems.com
+Version: 1.0
+    
+--------------------------------
+    
+CSS INDEX
+=========
+
+1. Base CSS
+
+================================*/
+
+
+/* =============================
+1. Base CSS
+2. Counter CSS
+3. Comming Soon Area
+4. CSS3 Animition
+================================*/
+.floatleft {
+	float: left 
+}
+.floatright { 
+	float: right 
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { 
+	outline: 0px solid 
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.fix { 
+	overflow: hidden 
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body {
+	height: 100%; 
+}
+body{
+    font-size: 14px;
+}
+html::before,
+html::after,
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: .5px;
+  height: .5px;
+  border-radius: 50%;
+  color: transparent;
+}
+a, a:hover, a:focus { 
+	-webkit-transition:all 0.4s ease 0s;
+	-moz-transition:all 0.4s ease 0s;
+	-o-transition:all 0.4s ease 0s;
+	transition:all 0.4s ease 0s;
+    text-decoration: none;
+    outline: none;
+}
+
+/* =============================
+2. Counter CSS
+================================*/
+
+.simply-countdown-losange {
+    display: table;
+    font-family: "Arial",sans-serif;
+    overflow: visible;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.simply-countdown-losange > .simply-section {
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    align-items: center;
+    border: 2px solid #fecb16;
+    border-radius: 5px;
+    display: flex;
+    float: left;
+    height: 100px;
+    justify-content: center;
+    margin: 30px;
+    transform: rotate(45deg);
+    width: 100px;
+}
+.simply-countdown-losange > .simply-section > div {
+    transform: rotate(-45deg);
+}
+.simply-countdown-losange > .simply-section > div .simply-amount, .simply-countdown-losange > .simply-section > div .simply-word {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* =============================
+2. Comming Soon Area
+================================*//
+.coming-text{
+    margin-bottom: 50px;
+}
+.coming-text h2{
+    font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.coming-text p{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-style: italic;
+    color: #fecb16;
+}
+.comming-soon-area, .display-table{
+    background-image: url(img/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.display-table{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.display-table-cell{
+    vertical-align: middle;
+    display: table-cell;
+}
+.social-icon{
+    margin-top: 50px;
+}
+.social-icon a {
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  font-size: 21px;
+  height: 50px;
+  line-height: 53px;
+  margin: 0 5px;
+  transition: all 0.4s ease 0s;
+  width: 50px;
+  color: #4264AA;
+}
+.social-icon a:hover, .social-icon a.one:hover, .social-icon a.two:hover{
+  background-color: #fecb16;
+  color: #fff;
+}
+.social-icon a.one{
+  color: #6CB7F0;
+}
+.social-icon a.two{
+  color: #CC181E;
+}
+
+
+/* =============================
+4. CSS3 Animition
+================================*/
+h1 {
+  display: flex;
+  justify-content: center;
+    color: #fff;
+}
+em {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 60px;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+em.planet {
+  -webkit-animation: planet-rotate 4s linear infinite;
+  animation: planet-rotate 4s linear infinite;
+  position: relative;
+}
+em.planet::before {
+  content: "";
+  position: absolute;
+  top: -.5px;
+  left: 3.5px;
+}
+em.planet.left {
+  -webkit-transform-origin: 40px 5px;
+  transform-origin: 40px 5px;
+    color: #fecb16;
+}
+em.planet.right {
+  -webkit-transform-origin: -20px 5px;
+  transform-origin: -20px 5px;
+    color: #fecb16;
+}
+span.space{
+    margin: 0px 5px;
+}
+@-webkit-keyframes planet-rotate {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+@keyframes planet-rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+

@@ -1,0 +1,68 @@
+
+html::before,
+html::after,
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: .5px;
+  height: .5px;
+  border-radius: 50%;
+  color: transparent;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+    color: #fff;
+}
+
+em {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 60px;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+em.planet {
+  -webkit-animation: planet-rotate 4s linear infinite;
+  animation: planet-rotate 4s linear infinite;
+  position: relative;
+}
+
+em.planet::before {
+  content: "";
+  position: absolute;
+  top: -.5px;
+  left: 3.5px;
+}
+
+em.planet.left {
+  -webkit-transform-origin: 40px 5px;
+  transform-origin: 40px 5px;
+    color: #fecb16;
+}
+
+em.planet.right {
+  -webkit-transform-origin: -20px 5px;
+  transform-origin: -20px 5px;
+    color: #fecb16;
+}
+span.space{
+    margin: 0px 5px;
+}
+@-webkit-keyframes planet-rotate {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+@keyframes planet-rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+

@@ -1,0 +1,131 @@
+/* Elastislide Style */
+
+.elastislide-list {
+	list-style-type: none;
+	display: none;
+}
+
+.no-js .elastislide-list {
+	display: block;
+}
+
+.elastislide-carousel {
+	z-index: 5;
+}
+
+.elastislide-carousel ul li {
+	min-width: 20px; /* minimum width of the image (min width + border) */
+}
+
+.elastislide-wrapper {
+	position: relative;
+	margin: 0 auto;
+	min-height: 60px;
+	background-color: #474343;
+	transition: 0.4s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+
+.elastislide-wrapper:hover {
+	background-color: #000;
+}
+
+.elastislide-wrapper.elastislide-loading {
+	background-image: url(../images/loading.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.elastislide-horizontal {
+	padding: 22px 60px 22px 59px;
+}
+
+
+.elastislide-carousel {
+	overflow: hidden;
+	position: relative;
+}
+
+.elastislide-carousel ul {
+	position: relative;
+	display: block;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.elastislide-horizontal ul {
+	white-space: nowrap;
+}
+
+.elastislide-carousel ul li {
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+}
+
+.elastislide-horizontal ul li {
+	height: 100%;
+	display: inline-block;
+}
+
+.elastislide-vertical ul li {
+	display: block;
+}
+
+.elastislide-carousel ul li a {
+	display: inline-block;
+	width: 100%;
+	padding: 0 5px 0 6px;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.elastislide-carousel ul li a img {
+	display: block;
+	max-width: 100%;
+}
+
+/* Navigation Arrows */
+
+.elastislide-wrapper nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.elastislide-wrapper nav span {
+	position: absolute;
+	width: 16px;
+	height: 27px;
+	text-indent: -9000px;
+	cursor: pointer;
+	background: url(../images/prevnext1.png) 0 0 no-repeat;
+}
+
+.elastislide-wrapper nav span:hover {
+	opacity: 0.8;
+}
+
+.elastislide-horizontal nav span {
+	top: 50%;
+	left: 20px;
+	margin-top: -13px;
+}
+
+
+.elastislide-horizontal nav span.elastislide-next {
+	right: 20px;
+	left: auto;
+	background-position: right 0;
+}

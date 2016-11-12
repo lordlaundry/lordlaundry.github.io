@@ -1,0 +1,28 @@
+/*Medium Screen*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+/*Tablet Screen:768px*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    
+}
+/*Mobile Layout:320px*/
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 300px;
+    }
+    em {
+  font-size: 20px;
+        margin-top: 20px;
+}
+    .simply-countdown-losange > .simply-section{float: none;}
+}
+/*Width Mobile Layout:480px*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 450px;
+    }
+}
