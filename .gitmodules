@@ -1,0 +1,3 @@
+[submodule "develop"]
+	path = develop
+	url = git@github.com:lordlaundry/lordlaundry.github.io
