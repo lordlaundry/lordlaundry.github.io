@@ -1,3 +1,4 @@
 [submodule "develop"]
-	path = develop
-	url = https://github.com/lordlaundry/lordlaundry.github.io
+  path = develop
+  url = https://github.com/lordlaundry/lordlaundry.github.io
+  branch = develop
