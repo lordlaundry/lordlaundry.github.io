@@ -146,7 +146,7 @@ ul {
     text-align: center;
     height: 49px;
     border-radius: 500px;
-    background-color: #3da9b6;
+    background-color: #1A237E;
 }
 
 .list li {
@@ -183,7 +183,7 @@ ul {
 }
 
 .list1 li a:hover:after {
-    background-color: #3da9b6;
+    background-color: #1A237E;
     width: 0;
 }
 
@@ -229,7 +229,7 @@ a {
 }
 
 a:hover {
-    color: #3da9b6;
+    color: #1A237E;
 }
 
 .btn  {
@@ -237,7 +237,7 @@ a:hover {
     color: #fff;
     display: inline-block;
     padding: 22px 62px 24px;
-    background-color: #3da9b6;
+    background-color: #1A237E;
     font: bold 30px/40px 'Dosis', sans-serif;
 }
 
@@ -407,7 +407,7 @@ img.logo {
     color: #fff;
     text-align: center;
     display: block;
-    background-color: #79c4ca;
+    background-color: #1A237E;
     font: 36px/43px 'Dosis', sans-serif;
     margin-bottom: 25px;
 }
@@ -448,7 +448,7 @@ img.logo {
     width: 127px;
     height: 127px;
     float: left;
-    background-color: #3da9b6;
+    background-color: #1A237E;
     border-radius: 500px;
     margin-right: 25px;
 }
@@ -476,7 +476,7 @@ img.logo {
 /**Map**/
 
 .color1 {
-    color: #3da9b6;
+    color: #1A237E;
 }
 
 .color1 a:hover, a.color1:hover {
@@ -583,7 +583,7 @@ footer {
     width: 63px;
     height: 62px;
     text-align: center;
-    background-color: #79c4ca;
+    background-color: #1A237E;
 }
 
 .footer_socials .fa +.fa {
