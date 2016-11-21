@@ -4,5 +4,5 @@
   branch = develop
 [submodule "new"]
 	path = new
-	url = https://github.com/lordlaundry/lordlaundry.github.io
   branch = from-scratch
+	url = https://github.com/lordlaundry/lordlaundry.github.io
