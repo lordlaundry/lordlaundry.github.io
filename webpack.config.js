@@ -28,7 +28,7 @@ module.exports = {
   target: 'web',
   entry: './src/main.coffee',
   output: {
-    path: '/',
+    path: './',
     publicPath: '/',
     filename: 'scripts/main.js'
   },

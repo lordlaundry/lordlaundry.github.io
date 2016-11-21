@@ -4,7 +4,11 @@ const browserSync = require('browser-sync').create()
 const webpackDevMiddleware = require('webpack-dev-middleware')
 
 const webpackConfig = require('./webpack.config')
-const bundler = webpack(webpackConfig)
+const bundler = webpack(Object.assign(webpackConfig, {output: {
+  path: '/',
+  publicPath: '/',
+  filename: 'scripts/main.js'
+}}))
 
 /**
  * Reload all devices when bundle is complete
