@@ -1,0 +1,38 @@
+.logo-section
+  padding: 15px 0
+  .logo-image
+    max-width: 128px
+
+#services
+  text-align: center
+  border:
+    bottom: $gray-dark solid 1px
+  .row
+    margin: 
+      bottom: 1em
+  h1
+    font-size: 72px
+  [class*=col-sm-]
+    padding:
+      right: 5px
+      left: 5px
+  .item
+    width: 100%
+    display: flex
+    flex: 1
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    img
+      width: 100%
+    .caption
+      width: 100%
+      font-size: $font-size-h4
+      text-align: center
+      background-color: $brand-primary
+      color: #fff
+      i
+        font-size: 0.5em
+
+#services .row
+  @extend .container-fluid  

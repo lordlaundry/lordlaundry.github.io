@@ -1,0 +1,32 @@
+footer
+  background-color: $gray-dark
+  color: white
+  [class^=col-sm-]
+    padding: 10px 25px
+  .heading
+    line-height: 2
+    font-size: 1.2em
+    color: $brand-warning
+  .items
+    list-style: none
+    li.text-muted
+      font-size: 8px
+      font-style: italic
+      text-indent: -0.5em
+    .item
+      text-indent: -1em
+      a, a:hover, a:focus
+        text-decoration: none
+        color: white
+      a:hover
+        color: lighten($brand-danger, 15%)
+
+footer .items > .item:before
+  @extend .glyphicon
+  margin-right: 5px
+  font-size: small
+  color: $brand-danger
+  text-shadow: 1px 1px 1px rgba($gray-darker, 0.5)
+
+footer .phone-items > .item:before
+  @extend .glyphicon-phone-alt
