@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Prices :: The Lord Laundry</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="images/Lord.png" rel="shortcut icon">
+</head>
+<body class="contact">
+  <div class="container-fluid">
+    <header class="row">
+      <section class="logo-section text-center">
+        <img alt="The Lord Laundry" class="logo-image" src="images/Lord.png">
+        <h3>The Lord Laundry</h3>
+      </section>
+      <nav class="navigation-bar">
+        <a href="/">Home</a>
+        <a href="/prices.html">Our Prices</a>
+        <a class="active" href="/contact.html">Contact Us</a>
+      </nav>
+    </header>
+    <main class="row" id="contact">
+      <div class="col-sm-4">
+        <div class="panel panel-primary" id="map-panel">
+          <div class="panel-heading">Location on Map</div>
+          <div class="panel-body">
+            <img src="images/map-location.jpg" alt="Map" class="img-responsive">
+          </div>
+        </div>
+        <div class="panel panel-success" id="phone-panel">
+          <div class="panel-heading">Our Phone Numbers</div>
+          <div class="panel-body">
+            <ul class="phone-numbers">
+              <li class="text-muted">Shop</li>
+              <li><a href="tel:+96523718080">2371 8080</a></li>
+              <li><a href="tel:+96565581435">6558 1435</a></li>
+              <li class="text-muted">Home Delivery</li>
+              <li><a href="tel:+96566647254">6664 7254</a></li>
+              <li><a href="tel:+96566285868">6628 5868</a></li>
+              <li class="text-muted">Complaints</li>
+              <li><a href="tel:+96566881262">6688 1262</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <form action="//formspree.io/contact@lordlaundry.com" method="POST" class="col-sm-8">
+        <h3>Leave us a message!</h3>
+        <label for="fullname" class="form-group">Your Name:
+          <input type="text" id="fullname" name="fullname" placeholder="George Washington" class="form-control" required>
+        </label>
+        <label for="phonenumber" class="form-group">Your Phone Number:
+          <input type="text" id="phonenumber" name="phonenumber" class="form-control" placeholder="+965 XXXX-XXXX" required>
+        </label>
+        <label for="emailaddress" class="form-group">Your Email Address <span class="text-muted">(optional)</span>:
+          <input type="text" id="emailaddress" name="emailaddress" class="form-control" placeholder="doe@john.co.uk">
+        </label>
+        <label for="commentsbox" class="form-group">Your Comment:
+          <textarea name="commentsbox" id="commentsbox" cols="30" rows="5" class="form-control" placeholder="Comment here..." required></textarea>
+        </label>
+        <div class="form-group">
+          <input name="_next" type="hidden" value="http://lordlaundry.com/thanks.html">          
+          <button class="btn btn-primary pull-right">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer class="row">
+      <div class="col-sm-4">
+        <span class="heading">Call Us</span>
+        <ul class="items phone-items">
+          <li class="text-muted">Shop</li>
+          <li class="item">
+            <a href="tel:+96523718080">2371 8080</a>
+          </li>
+          <li class="item">
+            <a href="tel:+96565581435">6558 1435</a>
+          </li>
+          <li class="text-muted">Home Delivery</li>
+          <li class="item">
+            <a href="tel:+96566647254">6664 7254</a>
+          </li>
+          <li class="item">
+            <a href="tel:+96566285868">6628 5868</a>
+          </li>
+          <li class="text-muted">Complaints</li>
+          <li class="item">
+            <a href="tel:+96566881262">6688 1262</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <span class="heading">Visit Us</span>
+        <p class="text-muted"><i class="fa fa-map-marker text-danger"></i> Street 133, Building 445<br>
+        Block 1, Mahboula<br>
+        Opposite to Al-Hadda Mosque</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="heading">Leave a comment</span>
+        <form action="https://formspree.io/contact@lordlaundry.com" method="post">
+          <label class="form-group" for="name">Your Name: 
+            <input class="form-control" id="name" name="name" placeholder="John Adams" required="" type="text">
+          </label>
+          <label class="form-group" for="phone">Your Phone number: 
+            <input class="form-control" placeholder="+965 XXXX-XXXX" type="text">
+          </label>
+          <label class="form-group" for="comment">Your Comment: 
+            <textarea class="form-control" cols="25" id="comment" name="comment" placeholder="Comment Here..." rows="2"></textarea>
+          </label>
+          <input name="_next" type="hidden" value="http://lordlaundry.com/thanks.html">
+          <div class="form-group">
+            <button class="btn btn-danger">Submit</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </div>
+  <script src="scripts/main.js">
+  </script>
+</body>
+</html>
