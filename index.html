@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home :: The Lord Laundry</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="images/Lord.png">
+</head>
+
+<body class="home">
+  <div class="container-fluid">
+    <header class="row">
+      <section class="logo-section text-center">
+        <img class="logo-image" src="images/Lord.png" alt="The Lord Laundry">
+        <h3>The Lord Laundry</h3>
+      </section>
+      <nav class="navigation-bar">
+        <a href="/" class="active">Home</a>
+        <a href="/prices.html">Our Prices</a>
+        <a href="/contact.html">Contact Us</a>
+      </nav>
+    </header>
+    <main class="row" id="services">
+      <h1 class="text-center">What We Do</h1>
+      <div class="row">
+        <div class="col-sm-4 item-wrap">
+          <div class="item">
+            <img src="images/dry-clean.jpg" alt="Dry Cleaning">
+            <span class="caption">Dry Cleaning</span>
+          </div>
+        </div>
+        <div class="col-sm-4 item-wrap">
+          <div class="item">
+            <img src="images/steam-press.jpg" alt="Steam press">
+            <span class="caption">Steam Press</span>
+          </div>
+        </div>
+        <div class="col-sm-4 item-wrap">
+          <div class="item">
+            <img src="images/starching.jpg" alt="Starching">
+            <span class="caption">Starching</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 item-wrap">
+          <div class="item">
+            <img src="images/wedding-dress.jpg" alt="Wedding Dress">
+            <span class="caption">Wedding Dresses</span>
+          </div>
+        </div>
+        <div class="col-sm-4 item-wrap">
+          <div class="item">
+            <img src="images/heavy-items.jpg" alt="Heavy Items">
+            <span class="caption">Heavy Items</span>
+          </div>
+        </div>
+        <div class="col-sm-4 item-wrap">
+          <div class="item">
+            <img src="images/normal-wash.jpg" alt="Normal Cleaning">
+            <span class="caption">Normal Washing</span>
+          </div>
+        </div>
+      </div>
+      <span class="clearfix"></span>
+      <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+    </main>
+    <footer class="row">
+      <div class="col-sm-4">
+        <span class="heading">Call Us</span>
+        <ul class="items phone-items">
+          <li class="text-muted">Shop</li>
+          <li class="item"><a href="tel:+96523718080">2371 8080</a></li>
+          <li class="item"><a href="tel:+96565581435">6558 1435</a></li>
+          <li class="text-muted">Home Delivery</li>
+          <li class="item"><a href="tel:+96566647254">6664 7254</a></li>
+          <li class="item"><a href="tel:+96566285868">6628 5868</a></li>
+          <li class="text-muted">Complaints</li>
+          <li class="item"><a href="tel:+96566881262">6688 1262</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <span class="heading">Visit Us</span>
+        <p class="text-muted">
+          <i class="fa fa-map-marker text-danger"></i> Street 133, Building 445 <br>
+          Block 1, Mahboula<br>
+          Opposite to Al-Hadda Mosque
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <span class="heading">Leave a comment</span>
+        <form action="https://formspree.io/contact@lordlaundry.com" method="POST">
+          <label for="name" class="form-group"> Your Name:
+            <input type="text" name="name" id="name" placeholder="John Adams" class="form-control" required />
+          </label>
+          <label for="phone" class="form-group"> Your Phone number:
+            <input type="text" class="form-control" placeholder="+965 XXXX-XXXX" required/>
+          </label>
+          <label for="comment" class="form-group"> Your Comment:
+            <textarea name="comment" id="comment" cols="25" rows="2" class="form-control" placeholder="Comment Here..."></textarea>
+          </label>
+          <input type="hidden" name="_next" value="http://lordlaundry.com/thanks.html" />
+          <div class="form-group">
+            <button class="btn btn-danger">Submit</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
