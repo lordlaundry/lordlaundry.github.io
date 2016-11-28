@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Lord Laundry</title>
+  <title>Home :: The Lord Laundry</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="images/Lord.png">
 </head>
 
-<body>
+<body class="home">
   <div class="container-fluid">
     <header class="row">
       <section class="logo-section text-center">
@@ -17,10 +18,11 @@
       </section>
       <nav class="navigation-bar">
         <a href="/" class="active">Home</a>
+        <a href="/prices.html">Our Prices</a>
         <a href="/contact.html">Contact Us</a>
       </nav>
     </header>
-    <section class="row" id="services">
+    <main class="row" id="services">
       <h1 class="text-center">What We Do</h1>
       <div class="row">
         <div class="col-sm-4 item-wrap">
@@ -64,7 +66,7 @@
       </div>
       <span class="clearfix"></span>
       <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
-    </section>
+    </main>
     <footer class="row">
       <div class="col-sm-4">
         <span class="heading">Call Us</span>
@@ -80,10 +82,30 @@
         </ul>
       </div>
       <div class="col-sm-4">
-
+        <span class="heading">Visit Us</span>
+        <p class="text-muted">
+          <i class="fa fa-map-marker text-danger"></i> Street 133, Building 445 <br>
+          Block 1, Mahboula<br>
+          Opposite to Al-Hadda Mosque
+        </p>
       </div>
       <div class="col-sm-4">
-
+        <span class="heading">Leave a comment</span>
+        <form action="https://formspree.io/contact@lordlaundry.com" method="POST">
+          <label for="name" class="form-group"> Your Name:
+            <input type="text" name="name" id="name" placeholder="John Adams" class="form-control" required />
+          </label>
+          <label for="phone" class="form-group"> Your Phone number:
+            <input type="text" class="form-control" placeholder="+965 XXXX-XXXX" required/>
+          </label>
+          <label for="comment" class="form-group"> Your Comment:
+            <textarea name="comment" id="comment" cols="25" rows="2" class="form-control" placeholder="Comment Here..."></textarea>
+          </label>
+          <input type="hidden" name="_next" value="http://lordlaundry.com/thanks.html" />
+          <div class="form-group">
+            <button class="btn btn-danger">Submit</button>
+          </div>
+        </form>
       </div>
     </footer>
   </div>

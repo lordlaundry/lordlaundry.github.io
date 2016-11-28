@@ -1,10 +1,12 @@
 require('./app.sass')
 jQuery = require 'jquery'
 
-jQuery(document).ready ($) ->
+jQuery(document).ready (jq) ->
+  if jq('body').hasClass('home')
+    homeOnReady(jq)
+  else
+    console.log 'Not Home'
+
+homeOnReady = ($) ->
   $('#services .item-wrap').each (idx, el) ->
-    animateIt = =>
-      $(el).fadeIn()
-    setTimeout(animateIt, idx * 500)
-    return
-  return
+    $(el).delay(idx * 300).fadeIn(500)

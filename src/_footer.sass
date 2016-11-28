@@ -2,11 +2,14 @@ footer
   background-color: $gray-dark
   color: white
   [class^=col-sm-]
-    padding: 10px 25px
+    align-items: center
+    display: flex
+    flex-direction: column
   .heading
     line-height: 2
     font-size: 1.2em
     color: $brand-warning
+    text-align: center
   .items
     list-style: none
     li.text-muted
@@ -20,7 +23,11 @@ footer
         color: white
       a:hover
         color: lighten($brand-danger, 15%)
-
+  form
+    display: flex
+    flex-direction: column
+  .fa-map-marker
+    margin-left: -15px
 footer .items > .item:before
   @extend .glyphicon
   margin-right: 5px
