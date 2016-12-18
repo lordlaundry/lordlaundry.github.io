@@ -7,7 +7,12 @@ const isProduction = (process.env.NODE_ENV === 'production')
 
 const pluginsList = [
   new ExtractTextPlugin('css/styles.css'),
-  new Webpack.NoErrorsPlugin()
+  new Webpack.NoErrorsPlugin(),
+  new Webpack.ProvidePlugin({
+    $: 'jquery',
+    jQuery: 'jquery',
+    'window.jQuery': 'jquery'
+  })
 ]
 
 const prodPlugins = [
@@ -44,14 +49,10 @@ module.exports = {
         loader: 'coffee-loader'
       },
       {
-        test: /\.s.ss$/,
+        test: /\..?.ss$/,
         loader: ExtractTextPlugin.extract(
           'style', 'css?sourceMap&importLoaders=1!sass?sourceMap'
         )
-      },
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css?sourceMap')
       },
       {
         test: /\.(eot|otf|ttf|woff|woff2|svg)$/,
