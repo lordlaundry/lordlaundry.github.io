@@ -33,7 +33,6 @@
     "bootstrap-sass": "^3.3.7",
     "jquery": "^2.2.0",
     "lodash": "^4.17.2",
-    "random-color": "^1.0.1",
-    "unslider": "https://github.com/idiot/unslider"
+    "random-color": "^1.0.1"
   }
 }

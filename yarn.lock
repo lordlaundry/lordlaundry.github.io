@@ -1496,10 +1496,6 @@ jquery@^2.2.0:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
 
-jquery@^3.1.0:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.1.1.tgz#347c1c21c7e004115e0a4da32cece041fad3c8a3"
-
 js-base64@^2.1.9:
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
@@ -3047,12 +3043,6 @@ uniqs@^2.0.0:
 unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
-
-"unslider@https://github.com/idiot/unslider":
-  version "2.0.3"
-  resolved "https://github.com/idiot/unslider#f36e9d86ccfa57e7f40c81832147deac90cd0a0a"
-  dependencies:
-    jquery "^3.1.0"
 
 url-loader@^0.5.7:
   version "0.5.7"
